@@ -1,6 +1,7 @@
 const express = require('express');
 
 const morgan = require('morgan');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -13,12 +14,13 @@ const stripeRouter = require('./routes/paymentRoutes');
 
 const app = express();
 
-require('dotenv').config();
 // Development logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+// CORS
+app.use(cors());
 // Body parser, reading data from body into req.body
 app.use(express.json());
 // Cookie parser

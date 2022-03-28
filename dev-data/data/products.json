@@ -1,0 +1,96 @@
+[
+  {
+    "_id": "6156aa0cba6e4c3fbe9c2e4f",
+    "title": "Jake Guitar Vintage Crusher",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shop-966f6.appspot.com/o/1635761996491Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png?alt=media&token=87e46c95-2eaa-4124-a472-eeea33981e6f",
+    "categories": ["women", " tshirts"],
+    "size": ["s", "m", "xl"],
+    "color": ["yellow", "red"],
+    "price": 20,
+    "inStock": true,
+    "updatedAt": "2021-11-01T10:20:03.219Z"
+  },
+  {
+    "_id": "6156fc48cf821adba1ac1336",
+    "title": "Angela Tee",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shop-966f6.appspot.com/o/1636288873346Angela_Natural_Tee.png?alt=media&token=f1fae9a7-b804-4873-be2a-fc947de3b31d",
+    "categories": ["women", "coats"],
+    "size": ["m", "xs", "l"],
+    "color": ["white", "black"],
+    "price": 31,
+    "inStock": true,
+    "updatedAt": "2021-11-07T12:41:20.321Z"
+  },
+  {
+    "inStock": true,
+    "_id": "6156fc50cf821adba1ac1337",
+    "title": "Product 3",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+    "categories": ["women", "jeans"],
+    "size": ["s", "m", "l"],
+    "color": ["black", "yellow"],
+    "price": 42
+  },
+  {
+    "inStock": true,
+    "_id": "6156fc5fcf821adba1ac1338",
+    "title": "Product 4  ",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+    "categories": ["jeans", "coats"],
+    "size": ["xs", "s", "m", "l"],
+    "color": ["green", "blue", "black"],
+    "price": 12
+  },
+  {
+    "inStock": true,
+    "_id": "6156fc65cf821adba1ac1339",
+    "title": "Product 5",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    "categories": ["women"],
+    "size": ["xl"],
+    "color": ["black"],
+    "price": 30
+  },
+  {
+    "inStock": true,
+    "_id": "6156fc6ecf821adba1ac133a",
+    "title": "Product 6",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    "categories": ["women", "coats"],
+    "size": ["xs"],
+    "color": ["red"],
+    "price": 45
+  },
+  {
+    "_id": "6156fc81cf821adba1ac133c",
+    "title": "Jacket",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fugit numquam labore. Consectetur officiis libero, pariatur minima delectus sit ut. Cum neque atque magni, error eveniet ea deleniti quis assumenda.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shop-966f6.appspot.com/o/1635760257661Women-Jacket-PNG-High-Quality-Image.png?alt=media&token=1fb1cc4b-6c5b-4326-845b-7fa774a094f8",
+    "categories": ["coats", "women"],
+    "size": ["xs", "m", "xl"],
+    "color": ["black", "green", "white", "yellow"],
+    "price": 40,
+    "inStock": true,
+    "updatedAt": "2021-11-01T09:51:07.976Z"
+  },
+  {
+    "_id": "617fc01d1e8231c01950c581",
+    "title": "Avatar Sticker",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quos praesentium earum. Mollitia nihil tenetur saepe incidunt quasi molestias perspiciatis aliquid velit, excepturi repellendus officiis commodi id ipsam maiores veritatis.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shop-966f6.appspot.com/o/1635762200441avatar.png?alt=media&token=39d132c9-e32b-46f9-82fa-db6591223eb0",
+    "categories": ["jeans", "stickers"],
+    "size": [],
+    "color": ["red", "blue", "black"],
+    "price": 10,
+    "inStock": true,
+    "createdAt": "2021-11-01T10:23:25.380Z",
+    "updatedAt": "2021-11-01T10:23:25.380Z",
+    "__v": 0
+  }
+]
