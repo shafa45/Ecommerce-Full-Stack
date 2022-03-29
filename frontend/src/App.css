@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+/* html, body{
+    overflow-x: hidden;
+} */
+
+@media only screen and (max-width: 450px) {
+    html{
+        font-size: 56.25%;
+    }
+
+}
+
+
+
