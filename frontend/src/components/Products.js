@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductItem from './ProductItem';
 import styled from 'styled-components';
+import { publicRequest } from '../requestMethod';
 // import { popularProducts } from '../dev-data';
-
 const Container = styled.div`
   padding: 2rem;
   display: flex;
@@ -21,8 +21,8 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/v1/products?category=${cat}`
-            : `http://localhost:5000/api/v1/products`
+            ? publicRequest.get(`/products?category=${cat}`)
+            : publicRequest.get(`/products`)
         );
         setProducts(res.data.products);
       } catch (err) {
