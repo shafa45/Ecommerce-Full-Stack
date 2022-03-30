@@ -181,8 +181,8 @@ const Cart = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  console.log(user);
-  console.log(cart);
+  // console.log(user);
+  // console.log(cart);
 
   const onToken = (token) => {
     setStripeToken(token);

@@ -147,7 +147,7 @@ const Product = () => {
         setProduct(res.data.product);
         setSize(res.data.product.size[0]);
         setColor(res.data.product.color[0]);
-        console.log(res);
+        // console.log(res);
         setLoading(false);
       } catch (err) {
         console.log(err);
