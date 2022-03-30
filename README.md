@@ -18,3 +18,10 @@ Live demo (Feel free to visit) 👉 : https://shafa-shop.herokuapp.com/
 - [Products](#products)
 - [Cart](#cart)
 - [Orders](#orders)
+
+## Test Payment
+
+- Email: Any Email
+- Number: 4242 4242 4242 4242
+- Date: Any Date in the Future
+- CVC: Any 3 Numbers
