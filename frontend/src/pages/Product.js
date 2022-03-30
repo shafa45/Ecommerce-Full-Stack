@@ -11,6 +11,8 @@ import { mobile, tablet, landscape, sm } from '../responsive';
 import Loading from 'react-fullscreen-loading';
 import { addProduct } from '../redux/cartRedux';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -165,6 +167,15 @@ const Product = () => {
 
   const handleClick = () => {
     // update cart
+    toast.success('Item Added To Cart!', {
+      position: 'bottom-center',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     dispatch(addProduct({ ...product, quantity, color, size }));
   };
 
@@ -224,6 +235,17 @@ const Product = () => {
                 <Add fontSize='large' onClick={() => handleQuantity('inc')} />
               </AmountContainer>
               <Button onClick={handleClick}>ADD TO CART</Button>
+              <ToastContainer
+                position='bottom-center'
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
             </AddContainer>
           </InfoContainer>
         </Wrapper>

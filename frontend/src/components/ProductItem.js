@@ -8,6 +8,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { addProduct } from '../redux/cartRedux';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import env from 'react-dotenv';
 
 const Info = styled.div`
@@ -112,6 +114,15 @@ const ProductPrice = styled.h4`
 const ProductItem = ({ item }) => {
   const dispatch = useDispatch();
   const handleClick = () => {
+    toast.success('Item Added To Cart!', {
+      position: 'bottom-center',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     // update cart
     dispatch(
       addProduct({
@@ -145,6 +156,17 @@ const ProductItem = ({ item }) => {
         <ProductTitle>{item.title}</ProductTitle>
         <ProductPrice>Rs {` ${item.price}`}</ProductPrice>
       </ProductMetaData>
+      <ToastContainer
+        position='bottom-center'
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </Container>
   );
 };
