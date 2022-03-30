@@ -21,10 +21,13 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? publicRequest.get(`/products?category=${cat}`)
-            : publicRequest.get(`/products`)
+            ? `https://shafa-shop.herokuapp.com/api/v1/products?category=${cat}`
+            : `https://shafa-shop.herokuapp.com/api/v1/products`
+          // cat
+          //   ? publicRequest.get(`/products?category=${cat}`)
+          //   : publicRequest.get(`/products`)
         );
-        console.log(res.data);
+        // console.log(res.data);
         setProducts(res.data.products);
       } catch (err) {
         console.log(err);
