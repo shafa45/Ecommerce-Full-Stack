@@ -110,7 +110,6 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     login(dispatch, values, '/login');
-    console.log(error);
   };
 
   const onChange = (e) => {

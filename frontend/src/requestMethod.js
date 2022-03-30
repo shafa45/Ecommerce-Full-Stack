@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://shafa-shop.herokuapp.com/api/v1';
-// const BASE_URL = 'http://localhost:5000/api/v1';
+// const BASE_URL = 'localhost:5000/api/v1';
 
 const user = JSON.parse(localStorage.getItem('persist:root'))?.user;
 const currentUser = user && JSON.parse(user).currentUser;

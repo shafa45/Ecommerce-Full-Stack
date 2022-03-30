@@ -13,6 +13,7 @@ import { useNavigate } from 'react-router';
 import Loading from 'react-fullscreen-loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div``;
 
@@ -180,6 +181,9 @@ const Cart = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
+  console.log(user);
+  console.log(cart);
+
   const onToken = (token) => {
     setStripeToken(token);
   };
@@ -197,6 +201,10 @@ const Cart = () => {
   //   }
   // };
   // // console.log(stripeToken);
+
+  useEffect(() => {
+    showToast();
+  }, []);
 
   useEffect(() => {
     const makeRequest = async () => {
@@ -217,6 +225,31 @@ const Cart = () => {
     stripeToken && makeRequest();
   }, [stripeToken]);
 
+  const showToast = (user, product) => {
+    if (!user) {
+      toast.error('Please Login to Continue...', {
+        position: 'bottom-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+    if (cart.products.length === 0) {
+      toast.error('Please Add Product to Continue...', {
+        position: 'bottom-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
   return (
     <Container>
       <Navbar />
@@ -227,9 +260,11 @@ const Cart = () => {
         <Wrapper>
           <Title>YOUR BAG</Title>
           <Top>
-            <TopButton>CONTINUE SHOPPING</TopButton>
+            <Link to='/'>
+              <TopButton>CONTINUE SHOPPING</TopButton>
+            </Link>
             <TopTexts>
-              <TopText>Shopping Bag(2)</TopText>
+              <TopText>Shopping Bag({cart.products.length})</TopText>
               <TopText>Your Wishlist(0)</TopText>
             </TopTexts>
             <StripeCheckout
@@ -347,27 +382,8 @@ const Cart = () => {
                 <Button disabled={!user || cart.products.length === 0}>
                   CHECKOUT NOW
                 </Button>
-                {!user &&
-                  toast.error('Please Login to Continue...', {
-                    position: 'bottom-center',
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                  })}
-
-                {cart.products.length === 0 &&
-                  toast.error('Please Add Product to Continue...', {
-                    position: 'bottom-center',
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                  })}
+                {/* {!user && showToast} */}
+                {/* {cart.products.length === 0 && showToast()} */}
                 <ToastContainer
                   position='bottom-center'
                   autoClose={5000}
