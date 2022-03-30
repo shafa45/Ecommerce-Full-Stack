@@ -225,7 +225,7 @@ const Cart = () => {
     stripeToken && makeRequest();
   }, [stripeToken]);
 
-  const showToast = (user, product) => {
+  const showToast = () => {
     if (!user) {
       toast.error('Please Login to Continue...', {
         position: 'bottom-center',
@@ -313,8 +313,7 @@ const Cart = () => {
                       <Add fontSize='large' />
                     </ProductAmountContainer>
                     <ProductPrice>
-                      `Rs {(product.quantity * product.price).toLocaleString()}
-                      ``
+                      Rs {(product.quantity * product.price).toLocaleString()}
                     </ProductPrice>
                   </PriceDetail>
                 </Product>
