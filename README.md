@@ -25,3 +25,7 @@ Live demo (Feel free to visit) 👉 : https://shafa-shop.herokuapp.com/
 - Number: 4242 4242 4242 4242
 - Date: Any Date in the Future
 - CVC: Any 3 Numbers
+
+
+https://user-images.githubusercontent.com/64552275/161211804-0a110bbf-2e1c-4440-afa7-1df87b68cf33.mp4
+
