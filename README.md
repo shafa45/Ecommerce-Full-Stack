@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">An awesome ecommerce app  <a href="https://nodejs.org/en/" target="_blank"> Full Stack MERN</a>.</h4>
+<h4 align="center">An awesome ecommerce app  <a href="https://shafa-shop.herokuapp.com/" target="_blank"> Full Stack MERN</a>.</h4>
 
 ## Deployed Version
 
